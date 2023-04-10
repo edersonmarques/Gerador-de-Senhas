@@ -1,7 +1,7 @@
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + 1;
+    return Math.floor(Math.random() * (max - min + 1));
 }
 
 function passGen() {
@@ -9,6 +9,7 @@ function passGen() {
     const pass_size = 20;
     let pass = "";
     const allowed = [];
+    
     if (numbers) {
         for (let code = 48; code < 58; code ++ ) {
             allowed.push(String.fromCharCode(code));
@@ -30,10 +31,11 @@ function passGen() {
     if (specials) {
         allowed.push('@', '$', '*', '-', '/', '%');
     }
+
     for (let count = 0; count < pass_size; count ++) {
         pass += allowed[getRandomInt(0, 67)];
     }
-    console.log(pass);
+
     return pass;
 }
 
