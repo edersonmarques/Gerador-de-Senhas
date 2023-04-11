@@ -13,17 +13,18 @@ body {
 }
 
 .container {
-    background: blue;
+    background: rgb(99, 99, 255);
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    
 }
 
 .box {
-    background-color: rgb(27, 27, 150);
+    background-color: rgb(44, 44, 249);
     padding: 2%;
     width: 500px;
     height: 500px;
