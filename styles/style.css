@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    
+}
+
+#tipo-senha {
+    margin-left: 10vw;
+}
+
+#pass {
+    color: rgb(0, 0, 0);
+    margin: 10%;
+}
+
+.container {
+    background: blue;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    background-color: rgb(27, 27, 150);
+    padding: 2%;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+}

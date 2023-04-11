@@ -5,23 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador de Senhas</title>
-    <style src="style.css"></style>
+    <link href="styles/style.css" rel="stylesheet">
 </head>
 <body>
-    <label for="tamanho-senha">Digite o tamanho da senha (8 a 20 caracteres): </label>
-    <input type="number" name="tamanho-senha" id="tamanho-senha"> <br>
-    <label for="tipo-senha">Escolha os tipos de caracteres que serão incluídos na sua senha: </label> <br>
-    <label for="minusc">Minusculas</label>
-    <input type="checkbox" id="minusc">
-    <label for="maiusc">Maiusculas</label>
-    <input type="checkbox" id="maiusc">
-    <label for="num">Numeros</label>
-    <input type="checkbox" id="num">
-    <label for="especiais">Especiais</label>
-    <input type="checkbox" id="especiais"> <br>
+    
+    <div class="container">
+        <div class="box">
+            <label for="tamanho-senha">Digite o tamanho da senha (8 a 20): </label> 
+            <input type="number" id="tamanho-senha"> <br> <br>
+            <label for="tipo-senha">Escolha os tipos de caracteres que serão incluídos na sua senha: </label> 
+            <div id="tipo-senha">
+                <p>
+                    <label for="minusc">Minusculas</label>
+                    <input type="checkbox" id="minusc">
+                </p>
+                <p>
+                    <label for="maiusc">Maiusculas</label>
+                    <input type="checkbox" id="maiusc">
+                </p>
+                <p>
+                    <label for="num">Numeros</label>
+                    <input type="checkbox" id="num">
+                </p>
+                <p>
+                    <label for="especiais">Especiais</label>
+                    <input type="checkbox" id="especiais"> 
+                </p>
+                <p>
+                    <input type="button" value="Gerar Senha" id="gen">
+                </p>
+            </div>
+            <p id="pass"></p>
+        </div>
+        
+    </div>
 
-    <p id="pass"></p>
-    <script type="module" src="script.js"></script> 
+    
+    <script type="module" src="scripts/script.js"></script> 
 
 
 </body>
