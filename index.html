@@ -11,10 +11,19 @@
     
     <div class="container">
         <div class="box">
-            <label for="tamanho-senha">Digite o tamanho da senha (8 a 20): </label> 
+            <fieldset>
+                <legend>DIGITE O TAMANHO DA SENHA</legend>
+                <input type="number" id="tamanho-senha">
+            </fieldset>
+            <!--<label for="tamanho-senha">Digite o tamanho da senha (8 a 20): </label> 
+
             <input type="number" id="tamanho-senha"> <br> <br>
-            <label for="tipo-senha">Escolha os tipos de caracteres que serão incluídos na sua senha: </label> 
-            <div id="tipo-senha">
+            -->
+            <fieldset id="tipo-senha">
+                <legend>ESCOLHA OS TIPOS DE CARACTERES QUE SERÃO INCLUÍDOS</legend>
+                <!--
+                    <label for="tipo-senha">Escolha os tipos de caracteres que serão incluídos na sua senha: </label> 
+                -->
                 <p>
                     <label for="minusc">Minusculas</label>
                     <input type="checkbox" id="minusc">
@@ -34,7 +43,7 @@
                 <p>
                     <input type="button" value="Gerar Senha" id="gen">
                 </p>
-            </div>
+            </fieldset>
             <p id="pass"></p>
         </div>
         
