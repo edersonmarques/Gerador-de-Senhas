@@ -1,12 +1,15 @@
+import { pass_text } from "./script.js";
+
 function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1));
 }
 
-function passGen() {
-    const [numbers, upper, lower, specials] = [true, true, true, true];
-    const pass_size = document.getElementById("tamanho-senha").value;
+function passGenerate() {
+    const [numbers, upper, lower, specials] = [document.getElementById("numbers").checked, document.getElementById("upper").checked, document.getElementById("lower").checked, document.getElementById("specials").checked];
+    
+    const pass_size = document.getElementById("pass_size").value;
     let pass = "";
     const allowed = [];
     
@@ -32,14 +35,18 @@ function passGen() {
         if (specials) {
             allowed.push('@', '$', '*', '-', '/', '%');
         }
-        for (let count = 0; count < pass_size; count ++) {
-            pass += allowed[getRandomInt(0, allowed.length - 1)];
+        if ((numbers || upper || lower || specials)) {
+            for (let count = 0; count < pass_size; count ++) {
+                pass += allowed[getRandomInt(0, allowed.length - 1)];
+            }
+        } else {
+            pass_text.innerText = "Por favor selecione pelo menos uma das opções.";
         }
         
     } else {
-
+        pass_text.innerText = "O tamanho da senha deve ser maior ou igual a 8, ou menor ou igual a 20.";
     }
     return pass;
 }
 
-export {getRandomInt, passGen};
+export {getRandomInt, passGenerate};

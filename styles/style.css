@@ -3,18 +3,22 @@ body {
     
 }
 
-#tipo-senha {
+#pass_type {
     margin-top: 10px;
 }
 
-#pass {
+#pass, #pass_text {
     color: rgb(0, 0, 0);
-    margin: 10%;
+    margin: 5%;
     font-size: x-large;
 }
 
+#copy_button {
+    margin: 5%;
+}
+
 .container {
-    background: rgb(99, 99, 255);
+    background: linear-gradient(rgb(0, 0, 0), gray);
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -25,7 +29,7 @@ body {
 }
 
 .box {
-    background-color: rgb(44, 44, 249);
+    background-color: rgb(159, 159, 228);
     padding: 2%;
     width: 500px;
     height: 500px;

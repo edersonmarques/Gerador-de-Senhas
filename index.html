@@ -13,38 +13,39 @@
         <div class="box">
             <fieldset>
                 <legend>DIGITE O TAMANHO DA SENHA</legend>
-                <input type="number" id="tamanho-senha">
+                <input type="number" id="pass_size">
             </fieldset>
             <!--<label for="tamanho-senha">Digite o tamanho da senha (8 a 20): </label> 
 
             <input type="number" id="tamanho-senha"> <br> <br>
             -->
-            <fieldset id="tipo-senha">
+            <fieldset id="pass_type">
                 <legend>ESCOLHA OS TIPOS DE CARACTERES QUE SERÃO INCLUÍDOS</legend>
                 <!--
                     <label for="tipo-senha">Escolha os tipos de caracteres que serão incluídos na sua senha: </label> 
                 -->
                 <p>
-                    <label for="minusc">Minusculas</label>
-                    <input type="checkbox" id="minusc">
+                    <label for="lower">Minusculas</label>
+                    <input type="checkbox" id="lower">
                 </p>
                 <p>
-                    <label for="maiusc">Maiusculas</label>
-                    <input type="checkbox" id="maiusc">
+                    <label for="upper">Maiusculas</label>
+                    <input type="checkbox" id="upper">
                 </p>
                 <p>
-                    <label for="num">Numeros</label>
-                    <input type="checkbox" id="num">
+                    <label for="numbers">Numeros</label>
+                    <input type="checkbox" id="numbers">
                 </p>
                 <p>
-                    <label for="especiais">Especiais</label>
-                    <input type="checkbox" id="especiais"> 
+                    <label for="specials">Especiais</label>
+                    <input type="checkbox" id="specials"> 
                 </p>
                 <p>
-                    <input type="button" value="Gerar Senha" id="gen">
+                    <input type="button" value="Gerar Senha" id="generate_button">
                 </p>
             </fieldset>
-            <p id="pass"></p>
+            <p id="pass_text"><p id="pass"></p></p>
+            <input type="button" value="Copiar senha" id="copy_button">
         </div>
         
     </div>
