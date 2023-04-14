@@ -1,10 +1,5 @@
 import { pass_text } from "./script.js";
-
-function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1));
-}
+import getRandomInt from "./getRandomInt.js";
 
 function passGenerate() {
     const [numbers, upper, lower, specials] = [document.getElementById("numbers").checked, document.getElementById("upper").checked, document.getElementById("lower").checked, document.getElementById("specials").checked];
