@@ -10,44 +10,35 @@
 <body>
     
     <div class="container">
-        <div class="box">
             <input id="pass" type="text" readonly></input>
             <div>
                 <label for="paass_size_range"></label>
                 <input id="pass_size_range" type="range" min="8" max="20">
             </div>
-            <!-- <fieldset>
-                <legend>DIGITE O TAMANHO DA SENHA</legend>
-                <input type="number" id="pass_size">
-            </fieldset> -->
-
-            
                 <div>
                     
                     <input type="checkbox" id="lower">
-                    <label for="lower">Minusculas</label>
+                    <label for="lower">Letras minúsculas</label>
                 </div>
                 <div>
                     
                     <input type="checkbox" id="upper">
-                    <label for="upper">Maiusculas</label>
+                    <label for="upper">Letras maiúsculas</label>
                 </div>
                 <div>
                     
                     <input type="checkbox" id="numbers">
-                    <label for="numbers">Numeros</label>
+                    <label for="numbers">Números</label>
                 </div>
                 <div>
                     
                     <input type="checkbox" id="specials"> 
-                    <label for="specials">Especiais</label>
+                    <label for="specials">Caracteres especiais</label>
                 </div>
-                <p>
+            
                     <input type="button" value="Gerar Senha" id="generate_button">
-                </p>
-            <p id="pass_text"></p>
+                
             <input type="button" value="Copiar senha" id="copy_button">
-        </div>
         
     </div>    
     <script type="module" src="scripts/script.js"></script> 

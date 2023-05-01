@@ -17,13 +17,13 @@ body {
 
 .container {
     padding: 20px;
-    box-shadow: 0 1px 10px #ccc;
+    box-shadow: 0 1px 10px #646262;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.box > div {
+.container > div {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -45,8 +45,8 @@ input[type=range] {
     width: 90%;
 }
 
-button {
-    background-color: blue;
+input[type=button] {
+    background-color: rgb(55, 0, 255);
     cursor: pointer;
     color: white;
     border: none;

@@ -34,13 +34,8 @@ function passGenerate() {
             for (let count = 0; count < pass_size; count ++) {
                 pass += allowed[getRandomInt(0, allowed.length - 1)];
             }
-        } else {
-            pass_text.innerText = "Por favor selecione pelo menos uma das opções.";
-        }
-        
-    } else {
-        pass_text.innerText = "O tamanho da senha deve ser maior ou igual a 8, ou menor ou igual a 20.";
-    }
+        }  
+    } 
     return pass;
 }
 
