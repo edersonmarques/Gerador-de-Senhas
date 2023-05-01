@@ -34,7 +34,7 @@ Este projeto é de código aberto e você é bem-vindo para contribuir. Para con
 ## Como executar localmente
 
 1. Clone o repositório: <code>git clone https://github.com/edersonmarques/gerador-de-senhas</code>
-2. Abra o arquivo index.html em seu navegador web.
+2. Abra o arquivo index.html em seu navegador web através de um servidor local.
 
 ## Créditos
 
