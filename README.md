@@ -11,7 +11,7 @@ Este é um projeto em JavaScript que permite gerar senhas aleatórias e seguras 
 
 ## Como utilizar
 
-Para utilizar o Gerador de Senhas, basta acessar o <a href="https://gerador-de-senhas.github.io/">link</a> da aplicação.
+Para utilizar o Gerador de Senhas, basta acessar o <a href="https://edersonmarques.github.io/Gerador-de-Senhas/" target="_blank">link</a> da aplicação.
 
 ## Contribuição
 
