@@ -28,7 +28,7 @@ function passGenerate() {
         }
 
         if (specials) {
-            allowed.push('@', '$', '*', '-', '/', '%');
+            allowed.push('@', '$', '*', '!', '&', '%');
         }
         if ((numbers || upper || lower || specials)) {
             for (let count = 0; count < pass_size; count ++) {
