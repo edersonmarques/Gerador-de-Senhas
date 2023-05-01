@@ -12,19 +12,17 @@
     <div class="container">
         <div class="box">
             <input id="pass" type="text" readonly></input>
-            <fieldset>
+            <div>
+                <label for="paass_size_range"></label>
+                <input id="pass_size_range" type="range" min="8" max="20">
+            </div>
+            <!-- <fieldset>
                 <legend>DIGITE O TAMANHO DA SENHA</legend>
                 <input type="number" id="pass_size">
-            </fieldset>
-            <!--<label for="tamanho-senha">Digite o tamanho da senha (8 a 20): </label> 
+            </fieldset> -->
 
-            <input type="number" id="tamanho-senha"> <br> <br>
-            -->
             <fieldset id="pass_type">
                 <legend>ESCOLHA OS TIPOS DE CARACTERES QUE SERÃO INCLUÍDOS</legend>
-                <!--
-                    <label for="tipo-senha">Escolha os tipos de caracteres que serão incluídos na sua senha: </label> 
-                -->
                 <div>
                     <label for="lower">Minusculas</label>
                     <input type="checkbox" id="lower">
@@ -49,11 +47,7 @@
             <input type="button" value="Copiar senha" id="copy_button">
         </div>
         
-    </div>
-
-    
+    </div>    
     <script type="module" src="scripts/script.js"></script> 
-
-
 </body>
 </html>

@@ -4,7 +4,7 @@ import getRandomInt from "./getRandomInt.js";
 function passGenerate() {
     const [numbers, upper, lower, specials] = [document.getElementById("numbers").checked, document.getElementById("upper").checked, document.getElementById("lower").checked, document.getElementById("specials").checked];
     
-    const pass_size = document.getElementById("pass_size").value;
+    const pass_size = document.getElementById("pass_size_range").value;
     let pass = "";
     const allowed = [];
     
